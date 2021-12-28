@@ -1,0 +1,1 @@
+nohup go run main.go >>./log.txt 1 >>./log.txt 2>/dev/null &
