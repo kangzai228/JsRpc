@@ -184,7 +184,7 @@ func main() {
 	r.GET("/ws", ws)
 	r.GET("/list", getList)
 	r.Use(TlsHandler())
-	//r.Run(LocalPort)
-	r.RunTLS(sslPort, "zhengshu.pem", "zhengshu.key")
+	r.Run(LocalPort)
+	// r.RunTLS(sslPort, "zhengshu.pem", "zhengshu.key")
 
 }
