@@ -185,6 +185,7 @@ func main() {
 	r.GET("/list", getList)
 	r.Use(TlsHandler())
 	// r.Run(LocalPort)
+	// SSL证书类型：其他
 	r.RunTLS(sslPort, "zhengshu.pem", "zhengshu.key")
 
 }
